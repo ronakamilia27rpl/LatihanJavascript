@@ -1,0 +1,47 @@
+<html>
+<head>
+    <title>Program Kalkulator Sederhana</title>
+</head>
+<body>
+        <script LANGUAGE="javascript">
+
+                function tambah(){
+                var bil1=parseFloat(document.hitung.nil1.value);
+                var bil2=parseFloat(document.hitung.nil2.value);
+                var hasil = bil1 + bil2 ;
+                document.hitung.hasil.value = hasil;}
+
+                function kurang(){
+                var bil1=parseFloat(document.hitung.nil1.value);
+                var bil2=parseFloat(document.hitung.nil2.value);
+                var hasil = bil1 - bil2 ;
+                document.hitung.hasil.value = hasil;}
+
+                function kali(){
+                var bil1=parseFloat(document.hitung.nil1.value);
+                var bil2=parseFloat(document.hitung.nil2.value);
+                var hasil = bil1 * bil2 ;
+                document.hitung.hasil.value = hasil;}
+
+                function bagi(){
+                var bil1=parseFloat(document.hitung.nil1.value);
+                var bil2=parseFloat(document.hitung.nil2.value);
+                var hasil = bil1 / bil2 ;
+                document.hitung.hasil.value = hasil;}
+
+                
+                </script>
+
+                <form name="hitung">
+                    <p>Bilangan 1 <input type="text" name="nil1" placeholder="Masukan bilangan 1"/></p>
+                    <p>Bilangan 2 <input type="text" name="nil2" placeholder="Masukan bilangan2"/></p>
+                    <P>Hasil <input type="text" name="hasil" disabled="true" value=""/></P>
+                <br>
+                    <input type="button"value="+"onclick="tambah()"/>
+                    <input type="button"value="-"onclick="kurang()"/>
+                    <input type="button"value="x"onclick="kali()"/>
+                    <input type="button"value="/"onclick="bagi()"/>
+                    <input type="reset"value="Reset" />
+                </form>
+</body>
+</html>
